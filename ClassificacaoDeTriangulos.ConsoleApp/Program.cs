@@ -33,6 +33,7 @@ internal class Program
 
             if (opecaoContinuar != "S")
                 break;
+            Console.Clear();
         }       
 
         static void ExibirCabecalho()
@@ -48,11 +49,15 @@ internal class Program
         {
             int valor;
             while (true)
-            {
+            {   
                 Console.Write($"Informe o valor Lado {nomeLado}: ");
                 bool consegueConverter = int.TryParse(Console.ReadLine(), out valor);
                 if (consegueConverter)
                     break;
+                else
+                {
+                    Console.WriteLine("Ops' Você Digitou um valor errado! Tente novamente. ");
+                }
             }
 
             return valor;
