@@ -13,17 +13,17 @@ namespace ClassificacaoDeTriangulos.ConsoleApp
                 Console.WriteLine("-------------------------------------");
                 Console.WriteLine("---- Classificador de Triangulos ----");
                 Console.WriteLine("-------------------------------------");
+                Console.WriteLine();
 
                 //Entrada de dados
                 Console.Write("Informe o valor Lado X: ");
                 int ladoX = Convert.ToInt32(Console.ReadLine());
-
                 Console.Write("Informe o valor Lado X: ");
                 int ladoY = Convert.ToInt32(Console.ReadLine());
-
                 Console.Write("Informe o valor Lado X: ");
                 int ladoZ = Convert.ToInt32(Console.ReadLine());
-
+                Console.WriteLine();
+          
                 //Exibição de Valores Digitados
                 Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("Valores informados:");
@@ -39,11 +39,23 @@ namespace ClassificacaoDeTriangulos.ConsoleApp
                     ladoY + ladoZ > ladoX;
 
                 if(medidasDotrianguloValidas == true)
-                    Console.WriteLine("O triângulo é valido.");
+                {
+                    string tipoTriangulo = "Não Classificado.";
+
+                    if (ladoX == ladoY && ladoY == ladoZ)
+                        tipoTriangulo = "Equilátero";
+                    else if (ladoX != ladoY && ladoY != ladoZ && ladoX != ladoZ)
+                        tipoTriangulo = "Escaleno";
+                    else
+                        tipoTriangulo = "Isósceles";
+
+                    Console.WriteLine($"O Triângulo é: {tipoTriangulo}");
+                }   
                 else
                     Console.WriteLine("Os valores informados não forma um triângulo valido");
 
-                    Console.Write("Deseja Continuar? ");
+                Console.WriteLine("-------------------------------------------------");
+                Console.Write("Deseja Continuar? ");
                 string opecaoContinuar = Console.ReadLine()!.ToUpper();
 
                 if (opecaoContinuar != "S")
