@@ -15,15 +15,34 @@ namespace ClassificacaoDeTriangulos.ConsoleApp
                 Console.WriteLine("-------------------------------------");
                 Console.WriteLine();
 
-                //Entrada de dados
-                Console.Write("Informe o valor Lado X: ");
-                int ladoX = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Informe o valor Lado X: ");
-                int ladoY = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Informe o valor Lado X: ");
-                int ladoZ = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
-          
+                //(Imput do usuario) Entrada de dados
+                int ladoX;
+                while(true)
+                {
+                    Console.Write("Informe o valor Lado X: ");
+                    bool consegueConverter = int.TryParse(Console.ReadLine(), out ladoX);
+                    if (consegueConverter)
+                        break;
+                }
+
+                int ladoY;
+                while(true)
+                {
+                    Console.Write("Informe o valor Lado Y: ");
+                    bool consegueConverter = int.TryParse(Console.ReadLine(), out ladoY);
+                    if (consegueConverter)
+                        break;
+                }
+
+                int ladoZ;
+                while (true)
+                {
+                    Console.Write("Informe o valor Lado Y: ");
+                    bool consegueConverter = int.TryParse(Console.ReadLine(), out ladoZ);
+                    if (consegueConverter)
+                        break;
+                }
+
                 //Exibição de Valores Digitados
                 Console.WriteLine("-------------------------------------------------");
                 Console.WriteLine("Valores informados:");
@@ -55,12 +74,14 @@ namespace ClassificacaoDeTriangulos.ConsoleApp
                     Console.WriteLine("Os valores informados não forma um triângulo valido");
 
                 Console.WriteLine("-------------------------------------------------");
-                Console.Write("Deseja Continuar? ");
+                Console.Write("Deseja Continuar? (S/N) ");
                 string opecaoContinuar = Console.ReadLine()!.ToUpper();
 
                 if (opecaoContinuar != "S")
                     break;
             }
-        }
+
+
+        }//F
     }
 }
