@@ -1,7 +1,7 @@
-# Classificador de Tri‚ngulo.
+# Classificador de Tri√¢ngulo.
 
 - **Este programa funciona no modo Console.App.**
-- **Como o entitulado, tem como objetivo classificar Tri‚ngulos dado os valores de numeros do tipo int representando os lados do triangulo.**
+- **Como o entitulado, tem como objetivo classificar Tri√¢ngulos dado os valores de numeros do tipo int representando os lados do triangulo.**
 
 ***
 
@@ -13,24 +13,24 @@
 
 ## Funcionalidades:
 
-- **Permitir imput/entrada de valores digitadas pelo usu·rio:** Caso n„o seja, o sistema informar· ao usu·rio e solicitar· uma nova entrada. 
-- **Verificar se o triangulo È valido. (A Soma de quaisquer dois lados È maior que o terceiro.)** Caso o Triangulo n„o seja valido, o programa informar· ao usu·rio.
-- **Classificar o triangulo de acordo com o seu tipo:** (Eq¸il·tero: Todos os lados s„o iguais) - (IsÛsceles: Dois lados s„o iguais) - (Escaleno: Todos os lados s„o diferentes)
-ApÛs classificaÁ„o, o programa infomar· ao usu·rio o tipo do tri‚ngulo digitado.
+- **Permitir imput/entrada de valores digitados pelo usu√°rio:** Caso n√£o seja, o sistema informar√° ao usu√°rio e solicitar√° uma nova entrada. 
+- **Verificar se o Tri√¢ngulo √© valido. (A Soma de quaisquer dois lados deve ser maior que o terceiro.)** Caso o Triangulo n√£o seja valido, o programa informar√° ao usu√°rio.
+- **Classificar o Tri√¢ngulo de acordo com o seu tipo:** (Eq√ºil√°tero: Todos os lados s√£o iguais) - (Is√≥sceles: Dois lados s√£o iguais) - (Escaleno: Todos os lados s√£o diferentes)
+Ap√≥s classifica√ß√£o, o programa infomar√° ao usu√°rio o tipo do tri√¢ngulo digitado.
 
 ***
 
 ## Como Utilizar:
 
-1. Clone o repositÛrio ou baixe o cÛdigo fonte.
-2. Abra o terminal ou o prompt de comando e navegue atÈ a pasta raiz.
-3. Utilize o comando abaixo para restaurar as dependÍncias do projeto.
+1. Clone o reposit√≥rio ou baixe o c√≥digo fonte.
+2. Abra o terminal ou o prompt de comando e navegue at√© a pasta raiz.
+3. Utilize o comando abaixo para restaurar as depend√™ncias do projeto.
 
 ```
 dotnet restore
 ```
 
-4. Compile a aplicaÁ„o utilizando o comando abaixo.
+4. Compile a aplica√ß√£o utilizando o comando abaixo.
 
 ```
 dotnet build --configuration Release
@@ -42,7 +42,7 @@ dotnet build --configuration Release
 dotnet run --project ClassificacaoDeTriangulos.ConsoleApp
 ```
 
-6.Para executar o arquivo compilado, navegue atÈ a pasta ./ClassificacaoDeTriangulo.ConsoleApp/bin/Release/net8.0/ e execute o arquivo:
+6.Para executar o arquivo compilado, navegue at√© a pasta ./ClassificacaoDeTriangulo.ConsoleApp/bin/Release/net8.0/ e execute o arquivo:
 
 ```
 ClassificacaoDeTriangulos.ConsoleApp
@@ -53,6 +53,6 @@ ClassificacaoDeTriangulos.ConsoleApp
 ## Requisitos.
 
 
-- *.NET SDK (recomendado .NET 8.0 ou superior) para compilaÁ„o e execuÁ„o do projeto.*
+- *.NET SDK (recomendado .NET 8.0 ou superior) para compila√ß√£o e execu√ß√£o do projeto.*
 
 ****
